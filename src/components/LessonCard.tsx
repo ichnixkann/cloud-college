@@ -68,6 +68,9 @@ export function LessonCard({
             <p className="mt-4 text-white/90 text-base leading-relaxed">
               {lesson.detail}
             </p>
+            {lesson.source && (
+              <p className="mt-3 text-xs text-white/60 italic">{lesson.source}</p>
+            )}
             <button
               onClick={() => setStage("quiz")}
               className="mt-8 rounded-full bg-white text-slate-900 px-6 py-3 font-semibold text-sm"
